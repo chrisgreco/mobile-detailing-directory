@@ -72,7 +72,7 @@ export default function ListingCard({ listing }: { listing: Listing }) {
           </Link>
           {listing.phone && (
             <a
-              href={`tel:${listing.phone}`}
+              href={`tel:${listing.phone?.replace(/\D/g, "")}`}
               className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 text-gray-500 transition-colors hover:border-accent hover:text-accent"
               aria-label={`Call ${listing.business_name}`}
             >
