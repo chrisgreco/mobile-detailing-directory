@@ -272,17 +272,17 @@ export default async function HomePage() {
       <section className="bg-accent px-4 py-14">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-3 text-2xl font-bold text-white">
-            Are You a Mobile Detailer?
+            Own a Listed Business?
           </h2>
           <p className="mb-6 text-orange-100">
-            Get found by thousands of car owners searching for detailing
-            services in your area. List your business for free.
+            Already listed? Claim your profile to update your info, add photos,
+            and respond to reviews.
           </p>
           <Link
             href="/add-listing"
             className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-3.5 font-semibold text-accent-dark transition-colors hover:bg-gray-50"
           >
-            Add Your Business <ArrowRight className="h-4 w-4" />
+            Claim Your Listing <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

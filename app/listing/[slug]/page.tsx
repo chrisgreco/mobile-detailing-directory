@@ -301,6 +301,14 @@ export default async function ListingPage({
 
           {/* Sidebar */}
           <aside className="space-y-6">
+            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 text-center">
+              <p className="text-sm text-gray-600">
+                Own this business?{" "}
+                <Link href="/add-listing" className="font-semibold text-accent-dark hover:underline">
+                  Claim your listing.
+                </Link>
+              </p>
+            </div>
             <LeadForm city={listing.city} state={listing.state_abbr} />
 
             {/* Similar detailers */}
