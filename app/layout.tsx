@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Car, Menu, X } from "lucide-react";
+import { Car } from "lucide-react";
+import Logo from "@/components/Logo";
 import "./globals.css";
 import { SITE_NAME, SITE_URL } from "@/lib/utils";
 
@@ -50,12 +51,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-gray-100 bg-white/95 backdrop-blur-sm">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent">
-            <Car className="h-5 w-5 text-white" />
-          </div>
-          <span className="text-lg font-bold text-navy-900">{SITE_NAME}</span>
-        </Link>
+        <Logo />
         <div className="hidden items-center gap-6 md:flex">
           <Link
             href="/ceramic-coating-near-me"
@@ -96,11 +92,8 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <div className="mb-4 flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-                <Car className="h-4 w-4 text-white" />
-              </div>
-              <span className="font-bold">{SITE_NAME}</span>
+            <div className="mb-4">
+              <Logo size="small" />
             </div>
             <p className="text-sm text-gray-400">
               The most comprehensive directory of mobile car detailers in the
